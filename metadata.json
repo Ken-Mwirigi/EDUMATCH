@@ -1,0 +1,5 @@
+{
+  "name": "EduMatch Kenya",
+  "description": "AI-powered school recommendation engine for parents in Kenya, finding the perfect fit based on curriculum, budget, and child personality.",
+  "requestFramePermissions": ["geolocation"]
+}
