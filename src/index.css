@@ -9,24 +9,24 @@
   :root {
     --background: #050505;
     --foreground: #ffffff;
-    --card: #111111;
+    --card: #0a0a0a;
     --card-foreground: #ffffff;
-    --popover: #111111;
+    --popover: #0a0a0a;
     --popover-foreground: #ffffff;
     --primary: #ffffff;
     --primary-foreground: #050505;
-    --secondary: #222222;
+    --secondary: #1a1a1a;
     --secondary-foreground: #ffffff;
-    --muted: #222222;
-    --muted-foreground: #a1a1aa;
-    --accent: #222222;
+    --muted: #1a1a1a;
+    --muted-foreground: #71717a;
+    --accent: #1a1a1a;
     --accent-foreground: #ffffff;
     --destructive: #ef4444;
     --destructive-foreground: #ffffff;
-    --border: #27272a;
-    --input: #27272a;
-    --ring: #d4d4d8;
-    --radius: 0.5rem;
+    --border: #1a1a1a;
+    --input: #1a1a1a;
+    --ring: #ffffff;
+    --radius: 1rem;
   }
 }
 
@@ -38,5 +38,27 @@
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .glass-hover:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .text-gradient {
+    background: linear-gradient(to bottom right, #fff 30%, #52525b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
